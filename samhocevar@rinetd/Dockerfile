@@ -10,4 +10,4 @@ RUN set -x; apk add --no-cache git automake autoconf gcc g++ make libffi-dev ope
     && chmod +x rinetd && cp rinetd /usr/bin/rinetd \
     && rm -rf * \
 
-ENTRYPOINT rinetd -f
+CMD rinetd -f
