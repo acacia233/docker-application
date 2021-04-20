@@ -8,6 +8,6 @@ RUN set -x; apk add --no-cache git automake autoconf gcc g++ make libffi-dev ope
     && make \
     && apk del git automake autoconf gcc g++ make libffi-dev openssl-dev \
     && chmod +x rinetd && cp rinetd /usr/bin/rinetd \
-    && rm -rf * \
+    && rm -rf *
 
 CMD rinetd -f
